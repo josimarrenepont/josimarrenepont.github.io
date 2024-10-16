@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/project-portfolio/static/css/main.14fee7e9.css",
+    "main.js": "/project-portfolio/static/js/main.36467812.js",
+    "static/media/clinic.gif": "/project-portfolio/static/media/clinic.46a43d91236afbd12a32.gif",
+    "static/media/erros.gif": "/project-portfolio/static/media/erros.c24c1d45f4b2e63f1a62.gif",
+    "static/media/Josimar.jpg": "/project-portfolio/static/media/Josimar.8772c3720d50e6792295.jpg",
+    "index.html": "/project-portfolio/index.html",
+    "main.14fee7e9.css.map": "/project-portfolio/static/css/main.14fee7e9.css.map",
+    "main.36467812.js.map": "/project-portfolio/static/js/main.36467812.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14fee7e9.css",
+    "static/js/main.36467812.js"
+  ]
+}
