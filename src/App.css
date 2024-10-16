@@ -11,7 +11,7 @@ header {
 }
 
 body {
-  background-color: #0F0F0F; /* Gray 50 */
+  background-color: #3C3D37; /* Gray 50 */
   color: #f8fafc; /* Gray 800 */
   font-family: 'Arial', sans-serif; /* Fonte padrão */
   margin: 0;
@@ -28,7 +28,7 @@ body {
   max-width: 300px; /* Largura máxima reduzida para o container de projetos */
   margin: 0 auto; /* Centraliza o conteúdo */
   padding: 20px; /* Espaçamento interno */
-  background-color: #1E201E; /* Cor de fundo para o container de projetos */
+  background-color: #3C3D37; /* Cor de fundo para o container de projetos */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
 }
@@ -142,7 +142,7 @@ header h1 {
   margin: auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #1E201E;
+  background-color: #3C3D37;
   box-shadow: 1px 2px 3px black;
 }
 
@@ -338,9 +338,9 @@ nav ul li {
 section {
   margin: 10px 0; /* Margem superior e inferior */
   padding: 10px; /* Espaçamento interno */
-  background-color: #1E201E; /* Fundo branco */
+  background-color: #2B2B2B; /* Fundo branco */
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 10px #697565; /* Sombra do card */
+  box-shadow: 0 4px 10px #222831; /* Sombra do card */
 }
 
 img {
@@ -387,7 +387,7 @@ img {
 }
 
 footer {
-  background-color: #040D12; /* Gray 800 * rodape/
+  background-color: #3C3D37; /* Gray 800 * rodape/
   color: white; /* Texto branco */
   padding: 10px; /* Espaçamento interno */
   text-align: center; /* Centraliza o texto */
