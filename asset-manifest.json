@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.e8fb0214.css",
-    "main.js": "/static/js/main.b00fdf0e.js",
+    "main.js": "/static/js/main.ffd298a3.js",
     "static/media/clinic.gif": "/static/media/clinic.46a43d91236afbd12a32.gif",
     "static/media/erros.gif": "/static/media/erros.c24c1d45f4b2e63f1a62.gif",
     "static/media/Josimar.jpg": "/static/media/Josimar.8772c3720d50e6792295.jpg",
     "index.html": "/index.html",
     "main.e8fb0214.css.map": "/static/css/main.e8fb0214.css.map",
-    "main.b00fdf0e.js.map": "/static/js/main.b00fdf0e.js.map"
+    "main.ffd298a3.js.map": "/static/js/main.ffd298a3.js.map"
   },
   "entrypoints": [
     "static/css/main.e8fb0214.css",
-    "static/js/main.b00fdf0e.js"
+    "static/js/main.ffd298a3.js"
   ]
 }
