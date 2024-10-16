@@ -1,38 +1,409 @@
-.App {
-  text-align: center;
+/* src/styles/App.css */
+
+
+header h1 {
+  color: white; /* Texto branco */
+  font-size: 2.7rem; /* Tamanho da fonte */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  height: 80px; /* Reduza o valor para o tamanho desejado */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #0F0F0F; /* Gray 50 */
+  color: #f8fafc; /* Gray 800 */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 900px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Espaçamento interno */
+}
+
+.projects-container {
+  max-width: 300px; /* Largura máxima reduzida para o container de projetos */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #1E201E; /* Cor de fundo para o container de projetos */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+}
+
+.header-container {
+  width: 1100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+}
+
+.icons-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px; /* Diminui o tamanho do ícone */
+  width: 10%; /* Ajusta o espaço necessário */
+  margin-right: 10px;
+}
+
+.icons-div img {
+  width: 24px; /* Define a largura do ícone */
+  height: 24px; /* Define a altura do ícone */
+  margin: 0 5px; /* Espaçamento ao redor */
+}
+
+
+h1, h2, h3 {
+  font-weight: bold; /* Estilo de fonte */
+  color: #ffff; /* Gray 800 */
+}
+
+header {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: var(--color-primary);
+  color: #1E201E;
+  height: 150px;
+  box-shadow: 0px 2px 3px rgb(14, 14, 14);
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 1px 3px 2px rgb(12, 12, 12);
+  font-size: 2,9rem;
+}
+
+.main-title {
+  max-width: 1100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0px 100px 0px;
+  width: 100%;
+  background-color: var(--color-primary);
+  box-shadow: 0px 2px 3px black;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  list-style: none;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-container{
+  display: flex;
+  margin: 20px 0 20px 0;
+ }
+
+ .intro-container img {
+  border-radius: 50%;
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+  border: 5px whitesmoke solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mobile-version {
+  display: none;
+}
+
+.contact-links, .contact-links a {
+ visibility: hidden;
+}
+
+.intro-description {
+  width: 73%;
+  text-align: justify;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  padding: 20px;
+  box-sizing: border-box;
+  color: whitesmoke;
+ margin: auto;
+ box-shadow: 1px 2px 3px black;
+ }
+
+ main {
+  width: 83%;
+  min-width: 360px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1E201E;
+  box-shadow: 1px 2px 3px black;
+}
+
+.project-title {
+  color: whitesmoke;
+  margin: 50px 0;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.project-card {
+  display: flex;
+  max-width: 100%;
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 5px 1px #243642;
+}
+
+.card-side1 {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.card-img {
+  max-width:  100%;
+  background-color: white;
+}
+
+.card-img img {
+  width: 100%;
+  height: 60%;
+}
+
+.card-description {
+box-sizing: border-box;
+width: 90%;
+padding: 15px 30px;
+text-align: justify;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary);
+  height: 40px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.footer-container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.remove-list-decoration {
+  list-style: none;
+}
+
+@media screen and (max-width: 852px) {
+
+header {
+    width: 100%;
+    height: 180px;
+    padding: 10px; 
+}
+
+  header h1 {
+      font-size: 2.4rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  header em {
+    font-size: 1.2rem;
+}
+
+.header-container {
+    display: block;
+}
+
+  .icons-div {
+    margin: 20px 0px 15px 0px;
+    font-size: 45px;
+    width: 30%;
+}
+
+  main {
+      padding: 10px;
+      width: 100%;
   }
+
+  .nav-link {
+  font-size: 0.9rem;
+  color: wheat;
+  } 
+  
+  .full-version {
+      display: none;
+  }
+
+  .mobile-version {
+      display: block;
+  }
+
+  .contact-links, .contact-links a {
+    visibility: visible;
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.contact-navlink {
+    visibility:collapse;
+}
+
+ .contact-links :hover {
+    color: rgb(235, 255, 163);
+}
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+   
+  .intro-container{
+    display: block;  
+    margin: auto;
+    text-align: center;
+   }
+
+
+   .intro-description {
+       margin-top: 10px;
+       width: 100%;
+   }
+
+   .project-container {
+       padding: 0px;
+   }
+
+   .project-card {
+       display: block;
+   }
+
+   .card-description {
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: justify;
+    }
+    
+    footer {
+        font-size: .6rem;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 10px;
+       }
+       .embed-container iframe, .embed-container object, .embed-container embed {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       }
+
+}
+   
+nav ul {
+  display: flex; /* Layout flexível */
+  list-style: none; /* Remove marcadores */
+  padding: 0; /* Remove espaçamento */
+}
+
+nav ul li {
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+section {
+  margin: 10px 0; /* Margem superior e inferior */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #1E201E; /* Fundo branco */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px #697565; /* Sombra do card */
+}
+
+img {
+  width: 128px; /* Tamanho fixo da imagem do perfil */
+  height: 128px; /* Tamanho fixo da imagem do perfil */
+  border-radius: 50%; /* Formato circular para a foto do perfil */
+  border: 4px solid #ccc; /* Borda da imagem */
+}
+
+.gif {
+  width: 600px; /* Largura do GIF */
+  height: 300px; /* Altura do GIF */
+  display: block; /* Faz o GIF se comportar como um bloco para permitir centralização */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  object-fit: cover; /* Cobre todo o espaço sem distorcer */
+  border: 4px solid #ccc; /* Borda do GIF */
+  border-radius: 20px; /* Bordas arredondadas, se desejado */
+}
+
+.projects-container a {
+  color: white; /* Cor do texto do link "Código Fonte" */
+}
+
+.projects-container {
+  max-width: 300px; /* Largura máxima reduzida para o container de projetos */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: px; /* Espaçamento interno */
+  background-color: #3C3D37; /* Cor de fundo para o container de projetos */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+.project-content {
+  display: flex; /* Usar flexbox para conteúdo do projeto */
+  align-items: normal; /* Alinha verticalmente */
+}
+
+.project-description {
+  margin-left: 10px; /* Espaçamento à esquerda do GIF */
+  color: white; /* Texto branco */
+}
+
+footer {
+  background-color: #040D12; /* Gray 800 * rodape/
+  color: white; /* Texto branco */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.flex img {
+  margin-left: 0.5rem; /* Espaçamento entre os ícones */
+  margin-right: 0.5rem;
+}
+
+.icon {
+  width: 80px; /* ou outro tamanho desejado */
+  height: 90px; /* ou outro tamanho desejado */
+  object-fit: contain; /* para manter a proporção */
+}
+
+nav a {
+  color: white; /* Garante que a cor do texto dos links é branca */
 }
