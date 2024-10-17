@@ -12,6 +12,7 @@ const Projects = () => {
       image: errosGif,
       link: 'https://github.com/josimarrenepont/separation-errors',
     },
+
     {
       title: 'Physiotherapy Clinic',
       description: 'Back-end: Java | Spring Boot | Front-end: React | TypeScript | Vite | PostgreSQL | Docker.<br />' +
@@ -19,6 +20,7 @@ const Projects = () => {
       image: clinic,
       link: 'https://github.com/josimarrenepont/physiotherapy-s-clinic',
     },
+
   ];
 
   return (

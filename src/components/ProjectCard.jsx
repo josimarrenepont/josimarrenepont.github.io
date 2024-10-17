@@ -18,6 +18,9 @@ const ProjectCard = ({ project }) => {
         <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: project.description }}></p>
         <a href={project.link} className="hover:underline" style={{ color: 'white' }}>
           Código Fonte
+          <p>
+            <br />
+          </p>
         </a>
       </div>
     </div>
