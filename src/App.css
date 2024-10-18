@@ -25,6 +25,7 @@ body {
   background-repeat: initial; /* Impede que a imagem se repita */
 }
 
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -122,13 +123,13 @@ header h1 {
 .nav {
   display: flex;
   justify-content: flex-start;
-  margin: 5px 0px 100px 0px;
+  margin: 5px 0;
   width: 100%;
   background-color: var(--color-primary);
   box-shadow: 0px 2px 3px black;
   position: sticky;
-  z-index: 5;
-  top: 0;
+  top: 0; /* Mantém a barra no topo */
+  z-index: 5; /* Garante que a barra fique acima de outros elementos */
 }
 
 .nav-link {
@@ -136,7 +137,9 @@ header h1 {
   list-style: none;
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
+
 
 .intro-container{
   display: flex;
@@ -214,7 +217,8 @@ header h1 {
   max-width:  100%;
   background-color: white;
 }
-img {
+
+.profile-pic {
   width: 128px; /* Tamanho fixo da imagem do perfil */
   height: 128px; /* Tamanho fixo da imagem do perfil */
   border-radius: 50%; /* Formato circular para a foto do perfil */
@@ -222,13 +226,11 @@ img {
 }
 
 .gif {
-  width: 600px; /* Largura do GIF */
-  height: 300px; /* Altura do GIF */
-  display: block; /* Faz o GIF se comportar como um bloco para permitir centralização */
-  margin: 0 auto; /* Centraliza o conteúdo */
-  object-fit: cover; /* Cobre todo o espaço sem distorcer */
-  border: 4px solid #ccc; /* Borda do GIF */
-  border-radius: 0%; /* Remove bordas arredondadas do GIF */
+  border-radius: 0%; /* Garante que o GIF não terá bordas arredondadas */
+}
+
+.icon {
+  border-radius: 0%; /* Garante que os ícones também não sejam circulares */
 }
 
 .card-img img {

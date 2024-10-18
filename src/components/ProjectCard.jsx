@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
           style={{ width: '60%', height: '400px' }}
         />
       </div>
-
+    
       {/* Descrição do projeto com dangerouslySetInnerHTML */}
       <div className="w-1/3 p-4 flex flex-col justify-center">
         <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
