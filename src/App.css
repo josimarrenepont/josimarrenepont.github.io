@@ -1,5 +1,41 @@
 /* src/styles/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000, #333333); /* Gradiente linear */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  background-size: auto; /* Deixe o padrão se repetir naturalmente */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-image: url('./assets/page.jpg'); /* Caminho da imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: initial; /* Impede que a imagem se repita */
+}
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+}
 
 header h1 {
   color: white; /* Texto branco */
@@ -142,7 +178,7 @@ header h1 {
   margin: auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #555555;
+  background-color: #010114;
   box-shadow: 1px 2px 3px black;
 }
 
@@ -229,6 +265,16 @@ footer {
 }
 
 @media screen and (max-width: 852px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+
+  .icons-div {
+    margin-top: 10px;
+  }
 
 header {
     width: 100%;
@@ -322,6 +368,7 @@ header {
     footer {
         font-size: .6rem;
     }
+    
 
     .embed-container {
         position: relative;
@@ -344,22 +391,20 @@ header {
 nav ul {
   display: flex; /* Layout flexível */
   list-style: none; /* Remove marcadores */
-  padding: 0; /* Remove espaçamento */
+  padding: 50; /* Remove espaçamento */
 }
 
 nav ul li {
-  margin-right: 20px; /* Espaçamento entre os itens */
+  margin-right: 50px; /* Espaçamento entre os itens */
 }
 
 section {
   margin: 10px 0; /* Margem superior e inferior */
   padding: 10px; /* Espaçamento interno */
-  background-color: #333333; /* Fundo branco */
+  background-color: #010114; /* Fundo branco */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 4px 10px #222831; /* Sombra do card */
 }
-
-
 
 .projects-container a {
   color: white; /* Cor do texto do link "Código Fonte" */
@@ -388,7 +433,7 @@ section {
 }
 
 footer {
-  background-color: #333333; /* Gray 800 * rodape/
+  background-color: #010114; /* Gray 800 * rodape/
   color: white; /* Texto branco */
   padding: 10px; /* Espaçamento interno */
   text-align: center; /* Centraliza o texto */
@@ -400,8 +445,8 @@ footer {
 }
 
 .icon {
-  width: 80px; /* ou outro tamanho desejado */
-  height: 90px; /* ou outro tamanho desejado */
+  width: 70px; /* ou outro tamanho desejado */
+  height: 70px; /* ou outro tamanho desejado */
   object-fit: contain; /* para manter a proporção */
 }
 
