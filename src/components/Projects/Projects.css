@@ -1,0 +1,93 @@
+.projects-section {
+    padding: 0.1rem 3rem; /* Maior espaçamento para criar uma seção mais destacada */
+    background-color: #001F3F;
+    color: #F4F6FF;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Ajustado para garantir boa responsividade */
+    gap: 2rem;
+  }
+  
+  .project-item {
+    background-color: #333; /* Cor de fundo clara para destacar o conteúdo */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #007bff; /* Cor do título */
+  }
+  
+  .project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Espaço abaixo do GIF */
+    transition: transform 0.3s ease;
+  }
+ 
+
+  
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #F4F6FF;
+    margin: 0.5rem 0 1rem 0; /* Reduz a margem superior e mantém uma boa margem inferior */
+    text-align: justify; /* Centraliza o texto da descrição */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas, tornando o texto mais legível */
+  }
+  
+  
+  .project-item a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-item a:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* Garante que os itens ocupem a largura total da tela */
+    }
+  
+    .project-item {
+      padding: 1rem; /* Reduz o padding para caber melhor em dispositivos menores */
+    }
+  
+    .project-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .project-description {
+      font-size: 0.9rem;
+    }
+  }
+  
