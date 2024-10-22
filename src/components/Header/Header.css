@@ -60,18 +60,29 @@
   }
   @media (max-width: 768px) {
     .header {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
+        flex-direction: column; /* Mantenha em coluna para melhor exibição em telas menores */
+        align-items: center; /* Centraliza os itens */
+        padding: 1rem; /* Ajuste conforme necessário */
     }
-  
+
     .header nav ul {
-      flex-direction: column;
-      gap: 0.5rem; /* Reduz o espaço entre os itens do menu */
+        flex-direction: column; /* Mantenha o menu em coluna */
+        gap: 0.5rem; /* Reduz o espaço entre os itens do menu */
     }
-  
+
     .icons {
-      margin-top: 1rem; /* Dá mais espaço para os ícones em telas pequenas */
+        margin-top: 1rem; /* Dá mais espaço para os ícones em telas pequenas */
     }
-  }
-  
+
+    .header h1 {
+        font-size: 1.5rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .header p {
+        font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .icons {
+        margin-top: 0; /* Ajuste o espaço dos ícones */
+    }
+}
