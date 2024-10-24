@@ -5,7 +5,7 @@ import './Projects.css';
 const projects = [
   {
     title: 'Separation Errors',
-    description: 'O projeto consiste emcontrolar os erros na separação dos produtos na logística, com a finalidade de gerenciar a movimentação dos itens na logística.',
+    description: 'O projeto consiste em controlar os erros na separação dos produtos na logística, com a finalidade de gerenciar a movimentação dos itens na logística.',
     gif: projeto1Gif, // Usar a variável importada
     link: 'https://github.com/seu-usuario/projeto1',
   },
