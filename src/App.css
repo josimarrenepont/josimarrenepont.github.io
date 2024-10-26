@@ -1,107 +1,108 @@
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-/* Estilos padrão (para telas maiores) */
-.about-section {
-  padding: 8rem 2rem;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Para dispositivos móveis (telas com largura máxima de 768px) */
-@media (max-width: 768px) {
-  .about-section {
-    padding: 4rem 1rem; /* Diminui o padding para telas menores */
-  }
-
-  .about-content {
-    flex-direction: column; /* Certifique-se de que o layout permaneça em coluna */
-    text-align: center;
-  }
-
-  .about-section h2 {
-    font-size: 1.5rem; /* Reduz o tamanho da fonte para dispositivos móveis */
-  }
-
-  .about-section p {
-    font-size: 1rem; /* Reduz o tamanho da fonte para melhorar a legibilidade */
-    max-width: 100%; /* Remove a largura máxima para melhor adaptação */
-  }
-
-  .about-photo {
-    width: 120px;
-    height: 120px; /* Ajusta o tamanho da foto para caber melhor em telas pequenas */
-  }
-}
-
-/* Ajustes adicionais para telas ainda menores (máximo de 480px) */
-@media (max-width: 480px) {
-  .about-section {
-    padding: 3rem 0.5rem; /* Reduz ainda mais o padding */
-  }
-
-  .about-section h2 {
-    font-size: 1.3rem;
-  }
-
-  .about-section p {
-    font-size: 0.9rem; /* Diminui a fonte para telas muito pequenas */
-  }
-
-  .about-photo {
-    width: 100px;
-    height: 100px; /* Ajusta a foto para dispositivos menores */
-  }
-}
+/* Estilos gerais */
 body {
-  background-color: #333;
-  color: black;
+  background: url('/assets/green_code.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: #F4F6FF;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+/* Seções de Contato e Projetos */
+.section {
+  background-color: #333; /* Fundo escuro */
+  backdrop-filter: blur(4px) brightness(0.8);
+  padding: 3rem 2rem;
+  margin: 2rem 0; /* Remove margem inferior para evitar espaço branco */
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s ease;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #00b8d4;
+}
+
+/* Links de Contato e Projetos */
+.section a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header com bordas e ícones */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #00b8d4;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Mesmo fundo que as seções */
+  height: 40px;
+  margin-top: 0; /* Remove qualquer margem que adicione espaço */
+  font-size: 13px;
+  color: #F4F6FF; /* Texto em branco */
+  padding: 0 1rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  color: #F4F6FF; /* Garantindo texto branco */
+  margin: 0;
+}
+
+
+/* Ícones de tecnologias com animação */
+.tag-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  filter: drop-shadow(0px 4px 8px #00b8d4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tag-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo de botão */
+.button {
+  padding: 0.8rem 1.2rem;
+  background-color: #00b8d4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #007d91;
+}
+
+/* Modo escuro */
 body.dark-mode {
   background-color: black;
   color: white;
@@ -120,26 +121,51 @@ body.dark-mode img {
   filter: grayscale(100%); /* Deixa as imagens em preto e branco */
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    width: 100%;
-    padding: 4rem 1rem;
+
+/* Responsividade - Pontos de interrupção atualizados */
+@media (max-width: 1024px) {
+  .header, .section {
+      padding: 1rem;
+  }
+  .section h2 {
+      font-size: 2.2rem;
+  }
+  .button {
+      padding: 0.7rem 1rem;
   }
 }
-.mode-toggle {
-  background: none; /* Remove fundo */
-  border: none; /* Remove borda */
-  cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  font-size: 20px; /* Tamanho do ícone */
-  color: inherit; /* Herda a cor do texto */
-  position: fixed; /* Fixa o botão na tela */
-  top: 158px; /* Ajuste conforme necessário */
-  right: 20px; /* Ajuste conforme necessário */
-  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-  transition: color 0.3s; /* Transição suave para a cor */
+
+@media (max-width: 768px) {
+  .header, .section {
+      padding: 1rem;
+      text-align: center;
+  }
+  .header-menu {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+  .section h2 {
+      font-size: 1.8rem;
+  }
+  .button {
+      padding: 0.6rem 0.8rem;
+  }
 }
 
-.mode-toggle:hover {
-  color: gray; /* Muda a cor ao passar o mouse */
+@media (max-width: 480px) {
+  .section {
+      padding: 1.5rem 1rem;
+      margin: 1rem 0;
+  }
+  .section h2 {
+      font-size: 1.5rem;
+  }
+  .tag-icon {
+      width: 20px;
+      height: 20px;
+  }
+  .button {
+      padding: 0.5rem 0.7rem;
+      font-size: 0.9rem;
+  }
 }
-

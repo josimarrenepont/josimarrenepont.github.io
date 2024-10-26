@@ -1,5 +1,6 @@
 import projeto2Gif from '../../assets/gifs/clinic.gif';
 import projeto1Gif from '../../assets/gifs/erros.gif';
+import projeto3Gif from '../../assets/gifs/garantia.jpg';
 import './Projects.css';
 
 const projects = [
@@ -7,13 +8,19 @@ const projects = [
     title: 'Separation Errors',
     description: 'O projeto consiste em controlar os erros na separação dos produtos na logística, com a finalidade de gerenciar a movimentação dos itens na logística.',
     gif: projeto1Gif, // Usar a variável importada
-    link: 'https://github.com/seu-usuario/projeto1',
+    link: 'https://github.com/josimarrenepont/separation-errors',
   },
   {
     title: 'Physiotherapy Clinic',
     description: 'O plano foi elaborado visando registrar clientes e seus dependentes em uma clínica de fisioterapia, bem como gerenciar o controle interno dos pacientes da clinica.',
     gif: projeto2Gif, // Usar a variável importada
     link: 'https://github.com/josimarrenepont/physiotherapy-s-clinic',
+  },
+  {
+    title: 'Guarantee',
+    description: 'Projeto elaborado consiste em gerenciamento de garantias, cadastro de produtos que apresentaram problemas técnicos e gerenciar as garantias.',
+    gif: projeto3Gif,
+    link: 'https://github.com/josimarrenepont/guarantee',
   },
 ];
 

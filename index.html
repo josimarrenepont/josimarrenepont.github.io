@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,9 +6,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <style>
+      /* Estilos gerais */
+      body {
+        background: url('link-do-gif-binario.gif') no-repeat center center fixed;
+        background-size: cover;
+        color: #F4F6FF;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      /* Estilos para o botão de modo escuro */
+      #toggle-dark-mode {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: fixed; /* Posiciona o botão fixo no topo */
+        top: 10px; /* Distância do topo */
+        right: 20px; /* Distância da direita */
+        font-size: 24px; /* Tamanho do ícone */
+        color: #00b8d4; /* Cor do ícone */
+        z-index: 1000; /* Garante que fique acima de outros elementos */
+      }
+
+      /* Seções de Contato e Projetos */
+      .section {
+        background-color: #333; /* Fundo escuro */
+        backdrop-filter: blur(4px) brightness(0.8);
+        padding: 3rem 2rem;
+        margin: 2rem 0; /* Remove margem inferior para evitar espaço branco */
+        border-radius: 10px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.5s ease;
+      }
+
+      /* Estilo para modo escuro */
+      body.dark-mode {
+        background-color: black; /* Cor de fundo para o modo escuro */
+        color: white; /* Cor do texto para o modo escuro */
+      }
+
+      body.dark-mode .section {
+        background-color: #222; /* Cor de fundo das seções */
+      }
+
+      body.dark-mode a {
+        color: #1e90ff; /* Cor dos links */
+      }
+
+      body.dark-mode img {
+        filter: grayscale(100%); /* Deixa as imagens em preto e branco */
+      }
+
+      /* Outros estilos (header, footer, etc.) seguem aqui... */
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <button id="toggle-dark-mode"><i class="fa fa-moon-o"></i></button>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      // Seleciona o botão
+      const toggleButton = document.getElementById('toggle-dark-mode');
+
+      // Verifica o estado do modo escuro
+      let darkMode = localStorage.getItem('dark-mode') === 'true';
+
+      // Aplica o modo escuro se necessário
+      if (darkMode) {
+        document.body.classList.add('dark-mode');
+      }
+
+      // Adiciona um evento de clique ao botão
+      toggleButton.addEventListener('click', () => {
+        // Alterna a classe 'dark-mode' no body
+        document.body.classList.toggle('dark-mode');
+
+        // Atualiza o estado do modo escuro
+        darkMode = !darkMode;
+
+        // Salva a preferência do usuário no localStorage
+        localStorage.setItem('dark-mode', darkMode);
+      });
+    </script>
   </body>
 </html>

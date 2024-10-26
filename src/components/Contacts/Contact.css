@@ -6,14 +6,14 @@
   }
   
   .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    font-size: 1rem;
+    margin-bottom: 0.6rem; /* Espaçamento abaixo do título */
   }
   
   .contact-section p {
-    font-size: 1.2rem;
-    line-height: 1.6; /* Melhora a legibilidade */
-    margin: 0.5rem 0 1.5rem; /* Espaçamento entre parágrafos */
+    font-size: 0.2rem;
+    line-height: 0.2; /* Melhora a legibilidade */
+    margin: 0.5rem 0 0.5rem; /* Espaçamento entre parágrafos */
   }
   
   .contact-section a {
@@ -42,13 +42,13 @@
   }
   
   .contact-section h2 {
-    font-size: 1.8rem; /* Diminui o tamanho da fonte do título */
+    font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
     margin-bottom: 0.5rem; /* Reduz a margem abaixo do título */
   }
   
   .contact-section p {
-    font-size: 1rem; /* Diminui o tamanho da fonte do parágrafo */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
+    font-size: 0.9rem; /* Diminui o tamanho da fonte do parágrafo */
+    line-height: 0.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
     margin: 0.5rem 0 1rem; /* Reduz o espaço entre parágrafos */
   }
   
@@ -68,6 +68,6 @@
   }
   
   .contact-links li {
-    margin: 0.5rem 0; /* Espaçamento entre os links da lista */
+    margin: 0.3rem 0; /* Espaçamento entre os links da lista */
   }
   
