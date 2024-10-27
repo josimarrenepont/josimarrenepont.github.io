@@ -48,8 +48,12 @@
   
   .contact-section p {
     font-size: 0.9rem; /* Diminui o tamanho da fonte do parágrafo */
-    line-height: 0.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
     margin: 0.5rem 0 1rem; /* Reduz o espaço entre parágrafos */
+  }
+  
+  .contact-section p:last-of-type {
+    margin-bottom: 0.5rem; /* Reduz a margem abaixo da frase "Ou me siga nas redes sociais:" */
   }
   
   .contact-section a {
@@ -68,6 +72,6 @@
   }
   
   .contact-links li {
-    margin: 0.3rem 0; /* Espaçamento entre os links da lista */
+    margin: 0.2rem 0; /* Espaçamento entre os links da lista */
   }
   

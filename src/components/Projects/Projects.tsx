@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: 'Guarantee',
-    description: 'Projeto elaborado consiste em gerenciamento de garantias, cadastro de produtos que apresentaram problemas técnicos e gerenciar as garantias.',
+    description: 'Projeto voltado ao gerenciamento de garantias e cadastro de produtos com problemas técnicos, permitindo o acompanhamento de status e registro de falhas.',
     gif: projeto3Gif,
     link: 'https://github.com/josimarrenepont/guarantee',
   },
