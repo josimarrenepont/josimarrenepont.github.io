@@ -116,3 +116,13 @@
       margin-top: 0; /* Ajuste o espaço dos ícones */
   }
 }
+@media (max-width: 480px) {
+  .icons img {
+      width: 40px; /* Reduz o tamanho dos ícones em dispositivos móveis */
+      height: 40px; /* Ajuste a altura se necessário */
+  }
+
+  .icons a {
+      margin-left: 0.5rem; /* Ajuste as margens para um melhor alinhamento */
+  }
+}

@@ -152,19 +152,33 @@ body.dark-mode img {
 }
 
 @media (max-width: 480px) {
-  .section {
-      padding: 2rem 1rem;
-      margin: 1rem 0;
+  .about-section {
+      padding: 3rem 1rem; /* Ajuste o padding */
+      text-align: center; /* Centraliza o texto */
   }
-  .section h2 {
-      font-size: 1.5rem;
+
+  .about-photo {
+      width: 100px; /* Ajuste a largura da imagem */
+      height: 100px; /* Ajuste a altura da imagem */
   }
-  .tag-icon {
-      width: 20px;
-      height: 20px;
+
+  .about-section h2 {
+      font-size: 1.5rem; /* Ajuste do tamanho da fonte */
   }
-  .button {
-      padding: 0.5rem 0.7rem;
-      font-size: 0.9rem;
+
+  .about-section p {
+      font-size: 0.9rem; /* Ajuste do tamanho da fonte */
+      max-width: 90%; /* Use uma porcentagem para que ocupe mais espaço */
+  }
+
+  .projects-section {
+      padding: 4rem 1rem; /* Ajuste o padding */
+  }
+
+  .projects-grid {
+      grid-template-columns: 1fr; /* Um item por linha */
   }
 }
+
+/* Adicione o restante do seu CSS aqui */
+
