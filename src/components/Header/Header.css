@@ -103,6 +103,11 @@
   .header p {
       font-size: 0.8rem; /* Ajuste o tamanho da fonte */
   }
+  .tag-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
   .tag-icon {
     width: 40px; /* Reduz o tamanho dos ícones em dispositivos móveis */
     height: 40px;
