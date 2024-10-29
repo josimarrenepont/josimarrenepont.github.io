@@ -131,6 +131,12 @@ body.dark-mode img {
   .header, .section {
       padding: 10rem;
   }
+  .about-section{
+      padding: 7rem 1rem;
+  }
+  .projects-section{
+    padding: 7rem 1rem;
+  }
   .section h2 {
       font-size: 2.2rem;
   }
@@ -159,6 +165,12 @@ body.dark-mode img {
   .button {
       padding: 0.6rem 0.8rem;
   }
+  .about-section{
+    padding: 7rem 1rem;
+}
+.projects-section{
+  padding: 7rem 1rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -168,10 +180,9 @@ body.dark-mode img {
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
   }
   .about-section {
-      padding: 2rem 1rem; /* Ajuste o padding */
+      padding: 7rem 1rem; /* Ajuste o padding */
       text-align: center; /* Centraliza o texto */
   }
-
   .about-photo {
       width: 100px; /* Ajuste a largura da imagem */
       height: 100px; /* Ajuste a altura da imagem */
@@ -185,11 +196,9 @@ body.dark-mode img {
       font-size: 0.9rem; /* Ajuste do tamanho da fonte */
       max-width: 90%; /* Use uma porcentagem para que ocupe mais espaço */
   }
-
-  .projects-section {
-      padding: 2rem 1rem; /* Ajuste o padding */
+  .projects-section{
+    padding: 7rem 1rem;
   }
-
   .projects-grid {
       grid-template-columns: 1fr; /* Um item por linha */
   }
