@@ -21,7 +21,7 @@
     font-size: 1rem;
     line-height: 1.8;
     color: #F4F6FF;
-    max-width: 1000px; /* Limita a largura do texto para melhorar a legibilidade */
+    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
     margin: 0; /* Remove a margem padrão do parágrafo */
     text-align: justify; /* Justifica o texto da descrição */
 }
@@ -35,4 +35,16 @@
     object-fit: cover; /* Garante que a imagem se ajuste ao container circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
 }
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 1rem; /* Reduz o padding em dispositivos menores */
+    }
 
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+}

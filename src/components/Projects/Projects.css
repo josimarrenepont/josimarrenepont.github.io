@@ -37,8 +37,22 @@
     margin-bottom: 1rem; /* Espaço abaixo do GIF */
     transition: transform 0.3s ease;
   }
- 
-
+  .project-description {
+    font-size: 1rem;
+    color: #F4F6FF;
+    margin: 0.5rem 0 1rem 0; /* Reduz a margem superior e mantém uma boa margem inferior */
+    text-align: justify; /* Centraliza o texto da descrição */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas, tornando o texto mais legível */
+  }
+  .project-item a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
   
 .project-item:hover {
     transform: translateY(-5px);
@@ -50,30 +64,15 @@
     margin-bottom: 0.5rem;
     color: #007bff;
   }
-  
-  .project-description {
-    font-size: 1rem;
-    color: #F4F6FF;
-    margin: 0.5rem 0 1rem 0; /* Reduz a margem superior e mantém uma boa margem inferior */
-    text-align: justify; /* Centraliza o texto da descrição */
-    line-height: 1.6; /* Melhora o espaçamento entre as linhas, tornando o texto mais legível */
-  }
-  
-  
-  .project-item a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
+
   .project-item a:hover {
     background-color: #0056b3;
   }
+
   @media (max-width: 768px) {
+    .projects-section {
+      padding: 4rem 1rem; /* Reduz o padding em dispositivos menores */
+  }
     .projects-grid {
       grid-template-columns: 1fr; /* Garante que os itens ocupem a largura total da tela */
     }
