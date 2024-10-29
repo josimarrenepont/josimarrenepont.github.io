@@ -89,7 +89,7 @@
 
   .header nav ul {
       flex-direction: column; /* Mantenha o menu em coluna */
-      gap: 0.5rem; /* Reduz o espaço entre os itens do menu */
+      gap: 0.8rem; /* Reduz o espaço entre os itens do menu */
   }
 
   .icons {
@@ -97,13 +97,16 @@
   }
 
   .header h1 {
-      font-size: 1.5rem; /* Ajuste o tamanho da fonte */
+      font-size: 1.4rem; /* Ajuste o tamanho da fonte */
   }
 
   .header p {
-      font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+      font-size: 0.8rem; /* Ajuste o tamanho da fonte */
   }
-
+  .tag-icon {
+    width: 40px; /* Reduz o tamanho dos ícones em dispositivos móveis */
+    height: 40px;
+}
   .icons {
       margin-top: 0; /* Ajuste o espaço dos ícones */
   }

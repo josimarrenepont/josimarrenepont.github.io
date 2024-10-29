@@ -74,4 +74,12 @@
   .contact-links li {
     margin: 0.2rem 0; /* Espaçamento entre os links da lista */
   }
-  
+  @media (max-width: 768px) {
+    .contact-section p, .contact-section h2 {
+        font-size: 1rem; /* Ajusta o tamanho dos textos de contato */
+    }
+
+    .contact-links li {
+        margin: 0.3rem 0; /* Ajusta o espaçamento entre os links de contato */
+    }
+}

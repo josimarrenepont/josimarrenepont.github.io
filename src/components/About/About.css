@@ -1,5 +1,5 @@
 .about-section {
-    padding: 7rem 2rem;
+    padding: 7rem 1rem;
     background-color: #001F3F;
     text-align: center;
 }
@@ -12,16 +12,16 @@
 }
 
 .about-section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem; 
     color: #F4F6FF;
     margin-bottom: 1rem; /* Ajusta a margem inferior para evitar que fique muito espaçado */
 }
 
 .about-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: #F4F6FF;
-    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
+    max-width: 1000px; /* Limita a largura do texto para melhorar a legibilidade */
     margin: 0; /* Remove a margem padrão do parágrafo */
     text-align: justify; /* Justifica o texto da descrição */
 }
