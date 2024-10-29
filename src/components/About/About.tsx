@@ -6,9 +6,6 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
-        <p>
-          <br />
-        </p>
         <h2>Sobre Mim</h2>
         <img src={minhaFoto} alt="Minha Foto" className="about-photo" />
         <p>

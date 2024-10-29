@@ -2,46 +2,51 @@
     padding: 7rem 1rem;
     background-color: #001F3F;
     text-align: center;
-  }
-  
-  .about-content {
-    display: flex;
+}
+
+.about-content {
+    display: flex; /* Usa flexbox para alinhar a foto e o texto */
     flex-direction: column; /* Coloca o título acima da imagem e do texto */
     align-items: center; /* Centraliza os itens horizontalmente */
     gap: 1rem; /* Espaço entre o título, a foto e a descrição */
-  }
-  
-  .about-section h2 {
+}
+
+.about-section h2 {
     font-size: 1.8rem; 
     color: #F4F6FF;
-    margin-bottom: 1rem; 
-  }
-  
-  .about-photo {
+    margin-bottom: 1rem; /* Ajusta a margem inferior para evitar que fique muito espaçado */
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #F4F6FF;
+    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    text-align: justify; /* Justifica o texto da descrição */
+}
+
+.about-photo {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* Torna a imagem circular */
     border: 4px solid #ccc; 
-    object-fit: cover; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  /* Responsividade - Ajustes para dispositivos móveis */
-  @media (max-width: 768px) {
+    object-fit: cover; /* Garante que a imagem se ajuste ao container circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+@media (max-width: 768px) {
     .about-section {
-      padding: 5rem 1rem; /* Reduz o padding em dispositivos menores */
+        padding: 5rem 1rem; /* Reduz o padding em dispositivos menores */
     }
     .about-section h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
     }
-  }
-  @media (max-width: 480px) {
-    .about-section h2 {
-      font-size: 1.5rem; /* Tamanho da fonte ajustado */
+
+    .about-section p {
+        font-size: 0.9rem;
     }
-    .about-photo {
-      width: 100px; /* Ajuste da largura da imagem */
-      height: 100px; /* Ajuste da altura da imagem */
+    .projects-section {
+        padding: 7rem 1rem; /* Reduz o padding em dispositivos menores */
     }
-  }
-  
+}

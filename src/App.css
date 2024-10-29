@@ -119,7 +119,23 @@ body.dark-mode .contact-section { /* Estilo para contato */
 body.dark-mode img {
   filter: grayscale(100%); /* Deixa as imagens em preto e branco */
 }
+.icons {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Alinha os ícones verticalmente */
+  flex-wrap: wrap; /* Permite que os ícones quebrem em várias linhas se necessário */
+  margin-top: 1rem; /* Espaço acima dos ícones */
+}
 
+.icons a {
+  margin: 0 1rem; /* Ajuste a margem entre os ícones */
+  transition: transform 0.3s ease; /* Transição suave para o efeito */
+}
+
+.icons img {
+  width: 30px; /* Ajuste conforme necessário */
+  height: 30px; /* Ajuste conforme necessário */
+}
 
 /* Responsividade - Pontos de interrupção atualizados */
 @media (max-width: 1024px) {
@@ -143,6 +159,13 @@ body.dark-mode img {
   .button {
       padding: 0.7rem 1rem;
   }
+  .icons a:hover img {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  }
+  .icons a {
+    margin-left: 1rem;
+    transition: transform 0.3s ease; /* Transição suave para o efeito */
+  }
 }
 
 @media (max-width: 768px) {
@@ -150,6 +173,13 @@ body.dark-mode img {
     width: 20px; /* Reduz o tamanho dos ícones para dispositivos móveis */
     height: 20px; /* Mantém a proporção */
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
+  }
+  .icons a:hover img {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  }
+  .icons a {
+    margin-left: 1rem;
+    transition: transform 0.3s ease; /* Transição suave para o efeito */
   }
   .header, .section {
       padding: 5rem;
@@ -173,35 +203,24 @@ body.dark-mode img {
 }
 }
 
-@media (max-width: 480px) {
-  .tag-icon {
-    width: 20px; /* Reduz o tamanho dos ícones para dispositivos móveis */
-    height: 20px; /* Mantém a proporção */
-    margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
-  }
-  .about-section {
-      padding: 7rem 1rem; /* Ajuste o padding */
-      text-align: center; /* Centraliza o texto */
-  }
-  .about-photo {
-      width: 100px; /* Ajuste a largura da imagem */
-      height: 100px; /* Ajuste a altura da imagem */
+@media (max-width: 768px) {
+  #toggle-dark-mode {
+      font-size: 15px; /* Tamanho do ícone menor em telas pequenas */
+      right: 10px; /* Ajusta a distância da direita se necessário */
+      top: 2px; /* Ajusta a distância do topo se necessário */
   }
 
-  .about-section h2 {
-      font-size: 1.5rem; /* Ajuste do tamanho da fonte */
-  }
-
-  .about-section p {
-      font-size: 0.9rem; /* Ajuste do tamanho da fonte */
-      max-width: 90%; /* Use uma porcentagem para que ocupe mais espaço */
-  }
-  .projects-section{
-    padding: 7rem 1rem;
-  }
-  .projects-grid {
-      grid-template-columns: 1fr; /* Um item por linha */
+  .header, .section {
+      padding: 5rem; /* Ajustes de padding em telas pequenas */
+      text-align: center;
   }
 }
-
-
+@media (max-width: 768px) {
+  .icons img {
+    width: 25px; /* Reduz o tamanho dos ícones em dispositivos móveis */
+    height: 25px; /* Reduz a altura proporcionalmente */
+  }
+  .icons a:hover img {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  }
+}

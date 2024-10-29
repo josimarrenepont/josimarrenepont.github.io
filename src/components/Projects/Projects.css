@@ -84,7 +84,9 @@
     .project-item h3 {
       font-size: 1.2rem;
     }
-  
+    .projects-section h2 {
+      margin: 3rem 2rem;
+    }
     .project-description {
       font-size: 0.9rem;
     }

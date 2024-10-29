@@ -43,6 +43,13 @@
   color: white;
   text-decoration: none;
 }
+.icons {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Alinha os ícones verticalmente */
+  flex-wrap: wrap; /* Permite que os ícones quebrem em várias linhas se necessário */
+  margin-top: 1rem; /* Espaço acima dos ícones */
+}
 
 .icons a {
   margin-left: 1rem;
@@ -95,7 +102,13 @@
   .icons {
       margin-top: 1rem; /* Dá mais espaço para os ícones em telas pequenas */
   }
-
+  .icons a:hover img {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  }
+  .icons a {
+    margin-left: 1rem;
+    transition: transform 0.3s ease; /* Transição suave para o efeito */
+  }
   .header h1 {
       font-size: 1.4rem; /* Ajuste o tamanho da fonte */
   }
@@ -109,20 +122,13 @@
     gap: 0.5rem;
 }
   .tag-icon {
-    width: 40px; /* Reduz o tamanho dos ícones em dispositivos móveis */
-    height: 40px;
+    width: 30px; /* Reduz o tamanho dos ícones em dispositivos móveis */
+    height: 30px;
 }
   .icons {
       margin-top: 0; /* Ajuste o espaço dos ícones */
   }
-}
-@media (max-width: 480px) {
-  .icons img {
-      width: 40px; /* Reduz o tamanho dos ícones em dispositivos móveis */
-      height: 40px; /* Ajuste a altura se necessário */
-  }
-
-  .icons a {
-      margin-left: 0.5rem; /* Ajuste as margens para um melhor alinhamento */
+  .about-setion{
+    padding: 7rem 2rem;
   }
 }
