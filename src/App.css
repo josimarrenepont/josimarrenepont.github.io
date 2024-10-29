@@ -129,7 +129,7 @@ body.dark-mode img {
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
   }
   .header, .section {
-      padding: 7rem;
+      padding: 10rem;
   }
   .section h2 {
       font-size: 2.2rem;
@@ -146,7 +146,7 @@ body.dark-mode img {
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
   }
   .header, .section {
-      padding: 7rem;
+      padding: 10rem;
       text-align: center;
   }
   .header-menu {
@@ -168,7 +168,7 @@ body.dark-mode img {
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
   }
   .about-section {
-      padding: 3rem 1rem; /* Ajuste o padding */
+      padding: 10rem 1rem; /* Ajuste o padding */
       text-align: center; /* Centraliza o texto */
   }
 
@@ -195,5 +195,4 @@ body.dark-mode img {
   }
 }
 
-/* Adicione o restante do seu CSS aqui */
 
