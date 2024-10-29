@@ -71,7 +71,7 @@
 
   @media (max-width: 768px) {
     .projects-section {
-      padding: 4rem 1rem; /* Reduz o padding em dispositivos menores */
+      padding: 7rem 1rem; /* Reduz o padding em dispositivos menores */
   }
     .projects-grid {
       grid-template-columns: 1fr; /* Garante que os itens ocupem a largura total da tela */
