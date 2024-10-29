@@ -62,8 +62,8 @@
 
       /* Outros estilos (header, footer, etc.) seguem aqui... */
     </style>
-    <script type="module" crossorigin src="/assets/index-yGk9Pojc.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-0Ut9gPmR.css">
+    <script type="module" crossorigin src="/assets/index-DUqa-yiR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DyHP1D8C.css">
   </head>
   <body>
     <div id="root"></div>
@@ -91,6 +91,20 @@
 
         // Salva a preferência do usuário no localStorage
         localStorage.setItem('dark-mode', darkMode);
+      });
+
+      // Código de rolagem suave para links de âncora
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetSection = document.querySelector(this.getAttribute("href"));
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop - 100, // ajuste para evitar sobreposição do cabeçalho
+              behavior: "smooth"
+            });
+          }
+        });
       });
     </script>
   </body>
