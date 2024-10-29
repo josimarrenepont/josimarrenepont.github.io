@@ -27,6 +27,9 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
+      <p>
+          <br />
+      </p>
       <h2>Meus Projetos</h2>
       <div className="projects-grid">
         {projects.map((project) => (
