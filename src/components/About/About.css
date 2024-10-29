@@ -37,7 +37,7 @@
 }
 @media (max-width: 768px) {
     .about-section {
-        padding: 7rem 1rem; /* Reduz o padding em dispositivos menores */
+        padding: 5rem 1rem; /* Reduz o padding em dispositivos menores */
     }
 
     .about-section h2 {
