@@ -135,7 +135,7 @@ body.dark-mode img {
       padding: 7rem 1rem;
   }
   .projects-section{
-    padding: 7rem 1rem;
+    padding: 1rem 1rem;
   }
   .section h2 {
       font-size: 2.2rem;
@@ -166,10 +166,10 @@ body.dark-mode img {
       padding: 0.6rem 0.8rem;
   }
   .about-section{
-    padding: 7rem 1rem;
+    padding: 1rem 1rem;
 }
 .projects-section{
-  padding: 7rem 1rem;
+  padding: 1rem 1rem;
 }
 }
 
@@ -180,7 +180,7 @@ body.dark-mode img {
     margin: 0 0.25rem; /* Ajusta a margem para evitar sobreposição */
   }
   .about-section {
-      padding: 7rem 1rem; /* Ajuste o padding */
+      padding: 1rem 1rem; /* Ajuste o padding */
       text-align: center; /* Centraliza o texto */
   }
   .about-photo {
@@ -197,7 +197,7 @@ body.dark-mode img {
       max-width: 90%; /* Use uma porcentagem para que ocupe mais espaço */
   }
   .projects-section{
-    padding: 7rem 1rem;
+    padding: 1rem 1rem;
   }
   .projects-grid {
       grid-template-columns: 1fr; /* Um item por linha */
