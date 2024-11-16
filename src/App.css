@@ -136,6 +136,14 @@ body.dark-mode img {
   width: 30px; /* Ajuste conforme necessário */
   height: 30px; /* Ajuste conforme necessário */
 }
+/* Estilo da bandeira de idioma */
+.img-idioma {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
 
 /* Responsividade - Pontos de interrupção atualizados */
 @media (max-width: 1024px) {
