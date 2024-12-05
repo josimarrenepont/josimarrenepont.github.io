@@ -2,6 +2,7 @@ import projeto2Gif from '../../assets/gifs/clinic.gif';
 import projeto1Gif from '../../assets/gifs/erros.gif';
 import projeto4Gif from '../../assets/gifs/games3.avif';
 import projeto3Gif from '../../assets/gifs/garantia.jpg';
+import projeto5Gif from '../../assets/gifs/pedido.jpg';
 import './Projects.css';
 
 const projects = [
@@ -29,6 +30,13 @@ const projects = [
     gif: projeto4Gif,
     link: 'https://github.com/josimarrenepont/dslist-backend',
   },
+  {
+    title: 'Gerenciamento de Pedidos',
+    description: 'Este projeto é um sistema completo para gerenciar pedidos, controlar estoque e visualizar relatórios de vendas.',
+    gif: projeto5Gif,
+    link: 'https://github.com/josimarrenepont/workshop-springboot3-jpa',
+  },
+
 ];
 
 const Projects = () => {

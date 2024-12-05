@@ -2,8 +2,9 @@ import dockerIcon from '../../assets/docker.svg';
 import githubIcon from '../../assets/github.svg';
 import javaIcon from '../../assets/java.svg';
 import kotlinIcon from '../../assets/kotlin.svg';
+import kubernetesIcon from '../../assets/kubernetes.svg';
 import linkedinIcon from '../../assets/linkedin.svg';
-import postgreSQLIcon from '../../assets/postgreesql.svg';
+import postgreSQLIcon from '../../assets/postgresql.svg';
 import springIcon from '../../assets/spring.svg';
 import './Header.css';
 
@@ -22,6 +23,7 @@ const Header = () => {
           <img src={springIcon} alt="Spring" className="tag-icon" />
           <img src={postgreSQLIcon} alt="PostgreSQL" className="tag-icon" />
           <img src={dockerIcon} alt="Docker" className="tag-icon" />
+          <img src={kubernetesIcon} alt="Kubernetes" className="tag-icon" />
         </div>
         <nav>
           <ul>
