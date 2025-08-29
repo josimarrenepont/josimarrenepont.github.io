@@ -1,85 +1,45 @@
+/* ================= CONTACT ================= */
 .contact-section {
-  padding: 0.1rem 0.1rem;
-  background-color: #333;
-  color: white;
+  padding: 5rem 2rem;
+  background-color: #001F3F; /* azul profundo */
+  color: #cbd5e1; /* cinza claro para leitura confortável */
   text-align: center;
 }
 
 .contact-section h2 {
+  font-size: 2rem;
+  color: #60a5fa; /* azul destaque consistente */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-section p {
   font-size: 1rem;
-  margin-bottom: 0.6rem; /* Espaçamento abaixo do título */
-}
-
-.contact-section p {
-  font-size: 0.2rem;
-  line-height: 0.2; /* Melhora a legibilidade */
-  margin: 0.5rem 0 0.5rem; /* Espaçamento entre parágrafos */
+  line-height: 1.6;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .contact-section a {
-  color: #1e90ff; /* Cor do link, ajustada para contraste */
-  text-decoration: none; /* Remove o sublinhado */
-  font-weight: bold; /* Destaca o texto do link */
+  color: #60a5fa; /* azul destaque */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-section a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  color: #3b82f6; /* leve escurecimento no hover */
+  transform: translateY(-2px);
 }
 
 .contact-links {
-  list-style: none; /* Remove marcadores da lista */
-  padding: 0; /* Remove padding padrão */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .contact-links li {
-  margin: 0.5rem 0; /* Espaçamento entre os links da lista */
-}
-.contact-section {
-  padding: 0.1rem 1rem; /* Diminui o padding superior e inferior */
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-
-.contact-section h2 {
-  font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
-  margin-bottom: 0.5rem; /* Reduz a margem abaixo do título */
-}
-
-.contact-section p {
-  font-size: 0.9rem; /* Diminui o tamanho da fonte do parágrafo */
-  line-height: 1.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
-  margin: 0.5rem 0 1rem; /* Reduz o espaço entre parágrafos */
-}
-
-.contact-section p:last-of-type {
-  margin-bottom: 0.5rem; /* Reduz a margem abaixo da frase "Ou me siga nas redes sociais:" */
-}
-
-.contact-section a {
-  color: #1e90ff; /* Cor do link */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: bold; /* Destaca o texto do link */
-}
-
-.contact-section a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-.contact-links {
-  list-style: none; /* Remove marcadores da lista */
-  padding: 0; /* Remove padding padrão */
-}
-
-.contact-links li {
-  margin: 0.2rem 0; /* Espaçamento entre os links da lista */
-}
-@media (max-width: 768px) {
-  .contact-section p, .contact-section h2 {
-      font-size: 1rem; /* Ajusta o tamanho dos textos de contato */
-  }
-
-  .contact-links li {
-      margin: 0.3rem 0; /* Ajusta o espaçamento entre os links de contato */
-  }
+  margin: 0.1rem 0;
 }

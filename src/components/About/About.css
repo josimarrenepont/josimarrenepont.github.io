@@ -1,52 +1,77 @@
+/* ================= ABOUT ================= */
 .about-section {
-    padding: 7rem 1rem;
-    background-color: #001F3F;
-    text-align: center;
+  padding: 7rem 2rem;
+  background-color: #001F3F; /* azul profundo consistente */
+  text-align: center;
 }
 
 .about-content {
-    display: flex; /* Usa flexbox para alinhar a foto e o texto */
-    flex-direction: column; /* Coloca o título acima da imagem e do texto */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    gap: 1rem; /* Espaço entre o título, a foto e a descrição */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* espaço entre título, foto e descrição */
+  max-width: 900px;
+  margin: 0 auto; /* centraliza o conteúdo */
 }
 
 .about-section h2 {
-    font-size: 1.8rem; 
-    color: #F4F6FF;
-    margin-bottom: 1rem; /* Ajusta a margem inferior para evitar que fique muito espaçado */
+  font-size: 2rem;
+  color: #60a5fa; /* azul destaque consistente com header e projetos */
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .about-section p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #F4F6FF;
-    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
-    margin: 0; /* Remove a margem padrão do parágrafo */
-    text-align: justify; /* Justifica o texto da descrição */
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #cbd5e1; /* cinza claro para boa leitura */
+  max-width: 800px;
+  margin: 0;
+  text-align: justify;
 }
 
 .about-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Torna a imagem circular */
-    border: 4px solid #ccc; 
-    object-fit: cover; /* Garante que a imagem se ajuste ao container circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* circular */
+  border: 4px solid #3b82f6; /* borda azul suave */
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* sombra elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-@media (max-width: 768px) {
-    .about-section {
-        padding: 5rem 1rem; /* Reduz o padding em dispositivos menores */
-    }
-    .about-section h2 {
-        font-size: 1.5rem;
-        padding: 2rem 1rem;
-    }
 
-    .about-section p {
-        font-size: 0.9rem;
-    }
-    .projects-section {
-        padding: 7rem 1rem; /* Reduz o padding em dispositivos menores */
-    }
+.about-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* efeito hover sofisticado */
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 5rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+  }
+
+  .about-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .projects-section {
+    padding: 5rem 1rem; /* mantém consistência com responsividade */
+  }
 }

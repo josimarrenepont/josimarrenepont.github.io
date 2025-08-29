@@ -1,134 +1,150 @@
+/* ================= HEADER ================= */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
+  background: rgba(20, 28, 45, 0.9); /* azul profundo com efeito glass */
+  backdrop-filter: blur(12px);
+  color: #e5e7eb; /* quase branco suave */
   display: flex;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
   padding: 1rem 2rem;
   z-index: 1000;
+  border-bottom: 1px solid rgba(203, 213, 225, 0.15);
 }
 
+/* Linha de cima */
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.header-title {
-  display: flex;
-  flex-direction: column; /* Alinha o nome e o título em coluna */
-  align-items: flex-start; /* Alinha os itens à esquerda */
-  margin-right: 2rem; /* Espaço entre o título e os outros elementos */
+/* Nome e título */
+.header-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #60a5fa; /* azul destaque suave */
 }
 
-.header h1 {
-  margin: 0; /* Remove a margem padrão do h1 */
+.header-title p {
+  margin: 0;
+  font-size: 1rem;
+  color: #cbd5e1; /* cinza claro sofisticado */
 }
 
-.header p {
-  margin: 0; /* Remove a margem padrão do p */
-  font-size: 1rem; /* Ajuste o tamanho da fonte do título se necessário */
-  color: white; /* Mantém a cor do texto consistente */
-}
-
-.header nav ul {
+/* Tecnologias */
+.tag-icons {
   display: flex;
   gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tag-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tag-icon:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 4px #60a5fa);
+}
+
+/* Linha de baixo */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+/* Menu */
+.header nav ul {
+  display: flex;
+  gap: 2rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header nav a {
-  color: white;
+  color: #e5e7eb;
   text-decoration: none;
-}
-.icons {
-  display: flex;
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  align-items: center; /* Alinha os ícones verticalmente */
-  flex-wrap: wrap; /* Permite que os ícones quebrem em várias linhas se necessário */
-  margin-top: 1rem; /* Espaço acima dos ícones */
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.icons a {
-  margin-left: 1rem;
-  transition: transform 0.3s ease; /* Transição suave para o efeito */
+.header nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #60a5fa; /* azul destaque suave */
+  transition: width 0.3s ease;
 }
 
-.icons img {
-  width: 30px;
-  height: 50px;
+.header nav a:hover {
+  color: #60a5fa;
 }
 
-/* Animação ao passar o mouse */
-.icons a:hover img {
-  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+.header nav a:hover::after {
+  width: 100%;
 }
 
-.tag-icon {
-  width: 20px; /* Ajuste o tamanho conforme necessário */
-  height: 20px; /* Ajuste o tamanho conforme necessário */
-  margin-left: 1.5rem; /* Espaço entre o texto e o ícone */
-  vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+/* Social icons */
+/* GitHub - fica branco no fundo escuro */
+.icons img[src*="github"] {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.tag-icons {
-  display: flex;
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  margin-top: 0.5rem; /* Espaço acima dos ícones */
-  flex-wrap: wrap; /* Permite que os ícones quebrem para a linha seguinte, se necessário */
+.icons img[src*="github"]:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px #60a5fa) brightness(1);
 }
 
-.tag-icon {
-  width: 50px; /* Ajuste o tamanho conforme necessário */
-  height: 50px; /* Ajuste o tamanho conforme necessário */
-  margin: 0 0.5rem; /* Espaço entre os ícones */
-  vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+/* LinkedIn - mantém a cor original */
+.icons img[src*="linkedin"] {
+  filter: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.icons img[src*="linkedin"]:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px #60a5fa);
+}
+
+
+/* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
   .header {
-      flex-direction: column; /* Mantenha em coluna para melhor exibição em telas menores */
-      align-items: center; /* Centraliza os itens */
-      padding: 1rem; /* Ajuste conforme necessário */
+    padding: 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .header nav ul {
-      flex-direction: column; /* Mantenha o menu em coluna */
-      gap: 0.8rem; /* Reduz o espaço entre os itens do menu */
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .icons {
-      margin-top: 1rem; /* Dá mais espaço para os ícones em telas pequenas */
-  }
-  .icons a:hover img {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
-  }
-  .icons a {
-    margin-left: 1rem;
-    transition: transform 0.3s ease; /* Transição suave para o efeito */
-  }
-  .header h1 {
-      font-size: 1.4rem; /* Ajuste o tamanho da fonte */
-  }
-
-  .header p {
-      font-size: 0.8rem; /* Ajuste o tamanho da fonte */
-  }
   .tag-icons {
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
-}
-  .tag-icon {
-    width: 30px; /* Reduz o tamanho dos ícones em dispositivos móveis */
-    height: 30px;
-}
-  .icons {
-      margin-top: 0; /* Ajuste o espaço dos ícones */
-  }
-  .about-setion{
-    padding: 7rem 2rem;
+    flex-wrap: wrap;
   }
 }

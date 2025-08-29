@@ -1,20 +1,41 @@
-footer { 
-    display: flex;
-    justify-content: center;
-    background-color: white; /* Fundo branco */
-    height: 40px;
-    margin-top: 20px;
-    font-size: 13px;
-    color: black; /* Esta linha pode ser removida ou alterada */
-}
-
-.footer-container {
-    width: 1100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* ================= FOOTER ================= */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #0e1a2b; /* azul escuro elegante */
+  height: 50px;
+  margin-top: 2rem;
+  align-items: center;
 }
 
 footer p {
-    color: white; /* Garante que o texto dentro do footer tenha cor branca */
+  color: #cbd5e1; /* texto cinza claro */
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1024px) {
+  .contact-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    height: 45px;
+  }
 }
