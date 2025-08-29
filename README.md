@@ -24,3 +24,6 @@ Para criar uma versão de produção, use:
 ```bash
   npm run build
 ```
+```bash
+  npm run deploy
+```
