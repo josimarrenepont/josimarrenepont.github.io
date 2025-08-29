@@ -1,85 +1,85 @@
 .contact-section {
-    padding: 0.1rem 0.1rem;
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    font-size: 1rem;
-    margin-bottom: 0.6rem; /* Espaçamento abaixo do título */
-  }
-  
-  .contact-section p {
-    font-size: 0.2rem;
-    line-height: 0.2; /* Melhora a legibilidade */
-    margin: 0.5rem 0 0.5rem; /* Espaçamento entre parágrafos */
-  }
-  
-  .contact-section a {
-    color: #1e90ff; /* Cor do link, ajustada para contraste */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Destaca o texto do link */
-  }
-  
-  .contact-section a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-  }
-  
-  .contact-links {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove padding padrão */
-  }
-  
-  .contact-links li {
-    margin: 0.5rem 0; /* Espaçamento entre os links da lista */
-  }
-  .contact-section {
-    padding: 0.1rem 1rem; /* Diminui o padding superior e inferior */
-    background-color: #333;
-    color: white;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
-    margin-bottom: 0.5rem; /* Reduz a margem abaixo do título */
-  }
-  
-  .contact-section p {
-    font-size: 0.9rem; /* Diminui o tamanho da fonte do parágrafo */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
-    margin: 0.5rem 0 1rem; /* Reduz o espaço entre parágrafos */
-  }
-  
-  .contact-section p:last-of-type {
-    margin-bottom: 0.5rem; /* Reduz a margem abaixo da frase "Ou me siga nas redes sociais:" */
-  }
-  
-  .contact-section a {
-    color: #1e90ff; /* Cor do link */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold; /* Destaca o texto do link */
-  }
-  
-  .contact-section a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-  }
-  
-  .contact-links {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove padding padrão */
-  }
-  
-  .contact-links li {
-    margin: 0.2rem 0; /* Espaçamento entre os links da lista */
-  }
-  @media (max-width: 768px) {
-    .contact-section p, .contact-section h2 {
-        font-size: 1rem; /* Ajusta o tamanho dos textos de contato */
-    }
+  padding: 0.1rem 0.1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
 
-    .contact-links li {
-        margin: 0.3rem 0; /* Ajusta o espaçamento entre os links de contato */
-    }
+.contact-section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem; /* Espaçamento abaixo do título */
+}
+
+.contact-section p {
+  font-size: 0.2rem;
+  line-height: 0.2; /* Melhora a legibilidade */
+  margin: 0.5rem 0 0.5rem; /* Espaçamento entre parágrafos */
+}
+
+.contact-section a {
+  color: #1e90ff; /* Cor do link, ajustada para contraste */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Destaca o texto do link */
+}
+
+.contact-section a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.contact-links {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove padding padrão */
+}
+
+.contact-links li {
+  margin: 0.5rem 0; /* Espaçamento entre os links da lista */
+}
+.contact-section {
+  padding: 0.1rem 1rem; /* Diminui o padding superior e inferior */
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
+  margin-bottom: 0.5rem; /* Reduz a margem abaixo do título */
+}
+
+.contact-section p {
+  font-size: 0.9rem; /* Diminui o tamanho da fonte do parágrafo */
+  line-height: 1.5; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
+  margin: 0.5rem 0 1rem; /* Reduz o espaço entre parágrafos */
+}
+
+.contact-section p:last-of-type {
+  margin-bottom: 0.5rem; /* Reduz a margem abaixo da frase "Ou me siga nas redes sociais:" */
+}
+
+.contact-section a {
+  color: #1e90ff; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Destaca o texto do link */
+}
+
+.contact-section a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.contact-links {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove padding padrão */
+}
+
+.contact-links li {
+  margin: 0.2rem 0; /* Espaçamento entre os links da lista */
+}
+@media (max-width: 768px) {
+  .contact-section p, .contact-section h2 {
+      font-size: 1rem; /* Ajusta o tamanho dos textos de contato */
+  }
+
+  .contact-links li {
+      margin: 0.3rem 0; /* Ajusta o espaçamento entre os links de contato */
+  }
 }

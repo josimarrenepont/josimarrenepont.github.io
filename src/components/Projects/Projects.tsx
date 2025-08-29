@@ -2,6 +2,7 @@ import projeto2Gif from '../../assets/gifs/clinic.gif';
 import projeto1Gif from '../../assets/gifs/erros.gif';
 import projeto4Gif from '../../assets/gifs/games3.avif';
 import projeto3Gif from '../../assets/gifs/garantia.jpg';
+import projeto6Gif from '../../assets/gifs/kafka.png';
 import projeto5Gif from '../../assets/gifs/pedido.jpg';
 import './Projects.css';
 
@@ -36,13 +37,20 @@ const projects = [
     gif: projeto5Gif,
     link: 'https://github.com/josimarrenepont/workshop-springboot3-jpa',
   },
-
+  {
+    title: 'Microsserviços com Saga',
+    description: 'Este projeto é uma implementação de um sistema de processamento de pedidos utilizando uma arquitetura de microsserviços, padrão de design Saga de Orquestração.',
+    gif: projeto6Gif,
+    link: 'https://github.com/josimarrenepont/microservices-saga-orchestrator',
+  },
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2>Projetos</h2>
+     <div className="section-title">
+        <h2>Projetos</h2>
+      </div>
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.title} className="project-item">
