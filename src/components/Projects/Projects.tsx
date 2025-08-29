@@ -38,7 +38,7 @@ const projects = [
     link: 'https://github.com/josimarrenepont/workshop-springboot3-jpa',
   },
   {
-    title: 'Microsserviços com Saga',
+    title: 'Microsserviços com Kafka',
     description: 'Este projeto é uma implementação de um sistema de processamento de pedidos utilizando uma arquitetura de microsserviços, padrão de design Saga de Orquestração.',
     gif: projeto6Gif,
     link: 'https://github.com/josimarrenepont/microservices-saga-orchestrator',
