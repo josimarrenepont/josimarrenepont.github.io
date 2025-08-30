@@ -1,6 +1,6 @@
 /* ================= CONTACT ================= */
 .contact-section {
-  padding: 5rem 2rem;
+  padding: clamp(3rem, 6vw, 7rem) 1.5rem;
   background-color: #001F3F; /* azul profundo */
   color: #cbd5e1; /* cinza claro para leitura confortável */
   text-align: center;
@@ -16,7 +16,7 @@
 .contact-section p {
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 0.3rem 0;
 }
 
 .contact-section a {
@@ -33,7 +33,7 @@
 
 .contact-links {
   list-style: none;
-  padding: 0;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   gap: 1.5rem;

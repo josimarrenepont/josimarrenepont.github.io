@@ -29,10 +29,23 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* igual ao padding-top do body */
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.6;
 }
 
 button {
@@ -65,4 +78,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/* Garante que o conteúdo não fique escondido atrás do header fixo */
+body {
+  padding-top: 100px; /* altura aproximada do header */
 }

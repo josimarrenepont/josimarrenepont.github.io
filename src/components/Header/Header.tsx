@@ -26,6 +26,12 @@ const Header = () => {
       <img src={kubernetesIcon} alt="Kubernetes" className="tag-icon" />
     </div>
   </div>
+    <div className="utility-buttons">
+  <img src="/src/assets/bandeira.png" alt="Idioma" />
+    <button id="toggle-dark-mode">
+     <i className="fa fa-moon-o"></i>
+    </button>
+  </div>
 
   {/* SEGUNDA LINHA - Menu + Links sociais */}
   <div className="header-bottom">
