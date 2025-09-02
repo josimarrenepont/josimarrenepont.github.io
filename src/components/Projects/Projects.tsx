@@ -32,13 +32,13 @@ const projects = [
     link: 'https://github.com/josimarrenepont/dslist-backend',
   },
   {
-    title: 'Gerenciamento de Pedidos',
+    title: 'Order Management',
     description: 'Este projeto é um sistema completo para gerenciar pedidos, controlar estoque e visualizar relatórios de vendas.',
     gif: projeto5Gif,
     link: 'https://github.com/josimarrenepont/workshop-springboot3-jpa',
   },
   {
-    title: 'Microsserviços com Kafka',
+    title: 'Microservices with Kafka',
     description: 'Este projeto é uma implementação de um sistema de processamento de pedidos utilizando uma arquitetura de microsserviços, padrão de design Saga de Orquestração.',
     gif: projeto6Gif,
     link: 'https://github.com/josimarrenepont/microservices-saga-orchestrator',
