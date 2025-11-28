@@ -97,24 +97,24 @@
   width: 100%;
 }
 
-.github-icon {
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease, filter 0.3s ease;
+.icons img.github-icon {
+  filter: brightness(0) invert(1) !important;
 }
 
-.github-icon:hover {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 6px #60a5fa) brightness(1);
-}
-.linkedin-icon {
-  filter: none;
-  transition: transform 0.3s ease, filter 0.3s ease;
+.icons img.github-icon:hover {
+  transform: scale(1.15) !important;
+  filter: drop-shadow(0 0 6px #60a5fa) brightness(1) !important;
 }
 
-.linkedin-icon:hover {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 6px #60a5fa);
+.icons img.linkedin-icon {
+  filter: none !important;
 }
+
+.icons img.linkedin-icon:hover {
+  transform: scale(1.15) !important;
+  filter: drop-shadow(0 0 6px #60a5fa) !important;
+}
+
 
 .utility-buttons {
   position: fixed;
