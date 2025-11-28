@@ -1,0 +1,11 @@
+:root {
+  --blue-deep: #001F3F;
+  --blue-light: #60a5fa;
+  --blue-strong: #3b82f6;
+
+  --text-light: #cbd5e1;
+  --text-soft: #e5e7eb;
+
+  --bg-dark: #0e1a2b;
+  --shadow-default: rgba(0,0,0,0.25);
+}

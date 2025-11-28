@@ -104,18 +104,19 @@
       });
 
       // Código de rolagem suave para links de âncora
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      for (const anchor of document.querySelectorAll('a[href^="#"]')) {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           const targetSection = document.querySelector(this.getAttribute("href"));
           if (targetSection) {
             window.scrollTo({
-              top: targetSection.offsetTop - 100, // ajuste para evitar sobreposição do cabeçalho
+              top: targetSection.offsetTop - 100,
               behavior: "smooth"
-            });
-          }
-        });
       });
+    }
+  });
+}
+
     </script>
   </body>
 </html>
