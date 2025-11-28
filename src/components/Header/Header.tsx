@@ -44,11 +44,11 @@ const Header = () => {
       </ul>
     </nav>
     <div className="icons">
-      <a href="https://github.com/josimarrenepont">
-        <img src={githubIcon} alt="GitHub" />
+      <a href="https://github.com/josimarrenepont" target="_blank">
+        <img src={githubIcon} alt="GitHub" className="github-icon" />
       </a>
-      <a href="https://www.linkedin.com/in/josimar-renepont/">
-        <img src={linkedinIcon} alt="LinkedIn" />
+      <a href="https://www.linkedin.com/in/josimar-renepont/" target="_blank">
+        <img src={linkedinIcon} alt="LinkedIn" className="linkedin-icon" />
       </a>
     </div>
   </div>

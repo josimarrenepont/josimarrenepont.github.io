@@ -97,28 +97,25 @@
   width: 100%;
 }
 
-/* Social icons */
-/* GitHub - fica branco no fundo escuro */
-.icons img[src*="github"] {
+.github-icon {
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.icons img[src*="github"]:hover {
+.github-icon:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 6px #60a5fa) brightness(1);
 }
-
-/* LinkedIn - mantém a cor original */
-.icons img[src*="linkedin"] {
+.linkedin-icon {
   filter: none;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.icons img[src*="linkedin"]:hover {
+.linkedin-icon:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 6px #60a5fa);
 }
+
 .utility-buttons {
   position: fixed;
   top: 10px;
