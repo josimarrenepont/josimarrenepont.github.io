@@ -1,6 +1,7 @@
 import dockerIcon from '../../assets/docker.svg';
 import githubIcon from '../../assets/github.svg';
 import javaIcon from '../../assets/java.svg';
+import kafkaIcon from '../../assets/kafka.svg';
 import kotlinIcon from '../../assets/kotlin.svg';
 import kubernetesIcon from '../../assets/kubernetes.svg';
 import linkedinIcon from '../../assets/linkedin.svg';
@@ -24,6 +25,7 @@ const Header = () => {
       <img src={springIcon} alt="Spring" className="tag-icon" />
       <img src={postgreSQLIcon} alt="PostgreSQL" className="tag-icon" />
       <img src={dockerIcon} alt="Docker" className="tag-icon" />
+      <img src={kafkaIcon} alt="Kafka" className="tag-icon" />
       <img src={kubernetesIcon} alt="Kubernetes" className="tag-icon" />
     </div>
   </div>
