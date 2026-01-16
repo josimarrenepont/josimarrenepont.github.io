@@ -1,11 +1,22 @@
 :root {
-  --blue-deep: #001F3F;
-  --blue-light: #60a5fa;
-  --blue-strong: #3b82f6;
-
-  --text-light: #cbd5e1;
-  --text-soft: #e5e7eb;
-
-  --bg-dark: #0e1a2b;
-  --shadow-default: rgba(0,0,0,0.25);
+  /* Paleta Profissional: Deep Night & Cyan */
+  --bg-main: #0a192f;        /* Fundo principal profundo */
+  --bg-card: #112240;        /* Fundo dos cards (levemente mais claro) */
+  --accent-cyan: #64ffda;    /* Cor de destaque (links, bordas, títulos) */
+  --text-primary: #e6f1ff;   /* Texto principal quase branco */
+  --text-secondary: #8892b0; /* Texto de suporte acinzentado */
+  --btn-hover: rgba(100, 255, 218, 0.1);
+  --shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
+
+body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+

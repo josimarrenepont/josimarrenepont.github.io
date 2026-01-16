@@ -5,6 +5,16 @@
 }
 
 html, body {
-  scroll-behavior: smooth;
-  font-family: "Inter", Arial, sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+  background-color: var(--bg-main); /* Garante que o fundo base seja o azul escuro */
+}
+
+body {
+  min-height: 100vh;
+  display: block; /* Mude de flex para block para evitar conflitos de largura */
+  padding-top: 100px; 
 }

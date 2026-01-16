@@ -3,14 +3,17 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(20, 28, 45, 0.9); /* azul profundo com efeito glass */
+  /* Usa a cor profunda do tema com opacidade para o efeito glass */
+  background: rgba(10, 25, 47, 0.85); 
   backdrop-filter: blur(12px);
-  color: #e5e7eb; /* quase branco suave */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
   z-index: 1000;
-  border-bottom: 1px solid rgba(203, 213, 225, 0.15);
+  /* Borda sutil para definir o limite do header sem pesar */
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1); 
 }
 
 /* Linha de cima */
@@ -21,12 +24,13 @@
   flex-wrap: wrap;
 }
 
-/* Nome e título */
+/* Nome do Desenvolvedor */
 .header-title h1 {
   margin: 0;
   font-size: 1.8rem;
-  font-weight: 600;
-  color: #60a5fa; /* azul destaque suave */
+  font-weight: 700;
+  color: var(--accent-cyan); /* Troca para o Ciano Neon */
+  letter-spacing: -0.02em;
 }
 
 .header-title p {
@@ -50,7 +54,7 @@
 
 .tag-icon:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 0 4px #60a5fa);
+  filter: drop-shadow(0 0 8px var(--accent-cyan)); /* Brilho Ciano em vez de azul */
 }
 
 /* Linha de baixo */
@@ -71,30 +75,29 @@
 }
 
 .header nav a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
+  color: var(--text-secondary); /* Cinza azulado para itens não selecionados */
+  transition: all 0.3s ease;
 }
 
 .header nav a::after {
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 1px; /* Linha fina é mais elegante */
   left: 0;
   bottom: -4px;
-  background: #60a5fa; /* azul destaque suave */
+  background: var(--accent-cyan); /* Consistência com o Ciano Neon */
   transition: width 0.3s ease;
 }
 
 .header nav a:hover {
-  color: #60a5fa;
+  color: var(--accent-cyan); /* Destaque no hover */
 }
 
-.header nav a:hover::after {
-  width: 100%;
+/* Linha animada do menu */
+.header nav a::after {
+  background: var(--accent-cyan); 
+  height: 1px; /* Linha mais fina é mais elegante */
 }
 
 .icons img.github-icon {

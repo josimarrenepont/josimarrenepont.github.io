@@ -1,3 +1,4 @@
+import projeto7Gif from '../../assets/gifs/api_pgt.jpg';
 import projeto2Gif from '../../assets/gifs/clinic.gif';
 import projeto1Gif from '../../assets/gifs/erros.gif';
 import projeto4Gif from '../../assets/gifs/games3.avif';
@@ -42,6 +43,12 @@ const projects = [
     description: 'Este projeto é uma implementação de um sistema de processamento de pedidos utilizando uma arquitetura de microsserviços, padrão de design Saga de Orquestração.',
     gif: projeto6Gif,
     link: 'https://github.com/josimarrenepont/microservices-saga-orchestrator',
+  },
+  {
+    title: 'Payment Service API',
+    description: 'API de pagamento integrada ao Mercado Pago.',
+    gif: projeto7Gif,
+    link: 'https://github.com/josimarrenepont/payment_mercadopago',
   },
 ];
 
