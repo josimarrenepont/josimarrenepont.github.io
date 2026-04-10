@@ -1,4 +1,4 @@
-import minhaFoto from '../../assets/images/Josimar.jpg';
+import minhaFoto from '../../assets/images/Josimar.jpeg';
 import './About.css';
 
 
