@@ -1,45 +1,105 @@
-/* ================= CONTACT ================= */
 .contact-section {
-  padding: clamp(3rem, 6vw, 7rem) 1.5rem;
-  background-color: #001F3F; /* azul profundo */
-  color: #cbd5e1; /* cinza claro para leitura confortável */
-  text-align: center;
+  padding: 5rem 0;
+   background: var(--card-bg);
 }
 
 .contact-section h2 {
+  text-align: center;
   font-size: 2rem;
-  color: #60a5fa; /* azul destaque consistente */
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #60a5fa;
 }
 
-.contact-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 1.5rem 0 0.3rem 0;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.contact-section a {
-  color: #60a5fa; /* azul destaque */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease, transform 0.2s ease;
+  border: 1px solid var(--border-color);
+  min-width: 220px;
+  background: var(--bg-color);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.contact-section a:hover {
-  color: #3b82f6; /* leve escurecimento no hover */
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+.contact-item a:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   transform: translateY(-2px);
 }
 
-.contact-links {
-  list-style: none;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+.contact-item:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+              0 0 15px rgba(56, 189, 248, 0.1);
 }
 
-.contact-links li {
-  margin: 0.1rem 0;
+.contact-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-info h3 {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+body.dark-mode .contact-card {
+  background: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .contact-card {
+    min-width: auto;
+  }
 }

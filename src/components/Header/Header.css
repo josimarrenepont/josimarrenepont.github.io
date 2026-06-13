@@ -1,72 +1,49 @@
-/* ================= HEADER ================= */
+/* Header.css - VERSÃO CORRIGIDA (sem duplicidade) */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  /* Usa a cor profunda do tema com opacidade para o efeito glass */
-  background: rgba(10, 25, 47, 0.85); 
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
-  color: var(--text-primary);
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border-color);
   z-index: 1000;
-  /* Borda sutil para definir o limite do header sem pesar */
-  border-bottom: 1px solid rgba(100, 255, 218, 0.1); 
+  transition: all 0.3s ease;
 }
 
-/* Linha de cima */
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+body.dark-mode .header {
+  background: rgba(15, 23, 42, 0.95);
 }
 
-/* Nome do Desenvolvedor */
-.header-title h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--accent-cyan); /* Troca para o Ciano Neon */
-  letter-spacing: -0.02em;
-}
-
-.header-title p {
-  margin: 0;
-  font-size: 1rem;
-  color: #cbd5e1; /* cinza claro sofisticado */
-}
-
-/* Tecnologias */
-.tag-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.tag-icon {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.tag-icon:hover {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 8px var(--accent-cyan)); /* Brilho Ciano em vez de azul */
-}
-
-/* Linha de baixo */
-.header-bottom {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-/* Menu */
-.header nav ul {
+/* LOGO - UMA VEZ SÓ */
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo-bracket {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.logo:hover {
+  color: var(--accent-hover);
+}
+
+/* NAVEGAÇÃO */
+.nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -74,93 +51,50 @@
   padding: 0;
 }
 
-.header nav a {
-  color: var(--text-secondary); /* Cinza azulado para itens não selecionados */
-  transition: all 0.3s ease;
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-.header nav a::after {
-  content: "";
+/* Efeito de linha embaixo ao passar o mouse */
+.nav-links a::after {
+  content: '';
   position: absolute;
-  width: 0%;
-  height: 1px; /* Linha fina é mais elegante */
-  left: 0;
   bottom: -4px;
-  background: var(--accent-cyan); /* Consistência com o Ciano Neon */
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-color);
   transition: width 0.3s ease;
 }
 
-.header nav a:hover {
-  color: var(--accent-cyan); /* Destaque no hover */
+.nav-links a:hover::after {
+  width: 100%;
 }
 
-/* Linha animada do menu */
-.header nav a::after {
-  background: var(--accent-cyan); 
-  height: 1px; /* Linha mais fina é mais elegante */
+.nav-links a:hover {
+  color: var(--accent-color);
 }
 
-.icons img.github-icon {
-  filter: brightness(0) invert(1) !important;
-}
-
-.icons img.github-icon:hover {
-  transform: scale(1.15) !important;
-  filter: drop-shadow(0 0 6px #60a5fa) brightness(1) !important;
-}
-
-.icons img.linkedin-icon {
-  filter: none !important;
-}
-
-.icons img.linkedin-icon:hover {
-  transform: scale(1.15) !important;
-  filter: drop-shadow(0 0 6px #60a5fa) !important;
-}
-
-
-.utility-buttons {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 0.5rem;
-  z-index: 1100;
-}
-
-.utility-buttons button,
-.utility-buttons img {
-  width: 32px;
-  height: 32px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-/* ================= RESPONSIVO ================= */
+/* RESPONSIVO */
 @media (max-width: 768px) {
-  .header {
-    padding: 1rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-bottom {
+  .header .container {
     flex-direction: column;
     gap: 1rem;
-    margin-top: 1rem;
+    padding: 0.5rem 1rem;
   }
-
-  .header nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .tag-icons {
-    justify-content: center;
+  
+  .nav-links {
+    gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    font-size: 0.85rem;
   }
 }

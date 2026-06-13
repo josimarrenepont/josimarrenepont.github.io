@@ -28,19 +28,7 @@
         padding: 0;
         overflow-x: hidden;
       }
-
-      /* Estilos para o botão de modo escuro */
-      #toggle-dark-mode {
-        background: none;
-        border: none;
-        cursor: pointer;
-        position: fixed; /* Posiciona o botão fixo no topo */
-        top: 10px; /* Distância do topo */
-        right: 20px; /* Distância da direita */
-        font-size: 24px; /* Tamanho do ícone */
-        color: #00b8d4; /* Cor do ícone */
-        z-index: 1000; /* Garante que fique acima de outros elementos */
-      }
+      
       .img-idioma {
         width: 30px;
         height: 20px;
@@ -63,71 +51,13 @@
         transition: background-color 0.5s ease;
       }
 
-      /* Estilo para modo escuro */
-      body.dark-mode {
-        background-color: black; /* Cor de fundo para o modo escuro */
-        color: white; /* Cor do texto para o modo escuro */
-      }
-
-      body.dark-mode .section {
-        background-color: #222; /* Cor de fundo das seções */
-      }
-
-      body.dark-mode a {
-        color: #1e90ff; /* Cor dos links */
-      }
-
-      body.dark-mode img {
-        filter: grayscale(100%); /* Deixa as imagens em preto e branco */
-      }
-
       /* Outros estilos (header, footer, etc.) seguem aqui... */
     </style>
   </head>
   <body>
     <img src="/src/assets/bandeira.png" alt="Toggle Language" class="img-idioma" id="toggle-language">
     <div id="root"></div>
-    <button id="toggle-dark-mode"><i class="fa fa-moon-o"></i></button>
     <script type="module" src="/src/main.tsx"></script>
 
-    <script>
-      // Seleciona o botão
-      const toggleButton = document.getElementById('toggle-dark-mode');
-
-      // Verifica o estado do modo escuro
-      let darkMode = localStorage.getItem('dark-mode') === 'true';
-
-      // Aplica o modo escuro se necessário
-      if (darkMode) {
-        document.body.classList.add('dark-mode');
-      }
-
-      // Adiciona um evento de clique ao botão
-      toggleButton.addEventListener('click', () => {
-        // Alterna a classe 'dark-mode' no body
-        document.body.classList.toggle('dark-mode');
-
-        // Atualiza o estado do modo escuro
-        darkMode = !darkMode;
-
-        // Salva a preferência do usuário no localStorage
-        localStorage.setItem('dark-mode', darkMode);
-      });
-
-      // Código de rolagem suave para links de âncora
-      for (const anchor of document.querySelectorAll('a[href^="#"]')) {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetSection = document.querySelector(this.getAttribute("href"));
-          if (targetSection) {
-            window.scrollTo({
-              top: targetSection.offsetTop - 100,
-              behavior: "smooth"
-      });
-    }
-  });
-}
-
-    </script>
   </body>
 </html>

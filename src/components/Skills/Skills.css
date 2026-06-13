@@ -1,0 +1,80 @@
+.skills-section {
+  padding: 5rem 0;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #60a5fa;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: var(--card-bg, #f1f5f9);
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* EFEITO HOVER - BRILHO E AUMENTO */
+.skill-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px var(--accent-color);
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: white;
+}
+
+.skill-item:hover .skill-icon {
+  filter: brightness(0) invert(1);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+body.dark-mode .skill-item {
+  background: #1e293b;
+}
+
+body.dark-mode .skill-item:hover {
+  background: var(--accent-color);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 1rem;
+  }
+  
+  .skill-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .skill-item {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+}

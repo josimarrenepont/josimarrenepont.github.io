@@ -1,7 +1,7 @@
 /* ================= ABOUT ================= */
 .about-section {
   padding: clamp(3rem, 6vw, 7rem) 1.5rem;
-  background-color: #001F3F; /* azul profundo consistente */
+  /*background-color: #001F3F; /* azul profundo consistente */
   text-align: center;
 }
 
@@ -34,7 +34,7 @@
 .about-section p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #cbd5e1; /* cinza claro para boa leitura */
+  color: var(--text-secondary);
   max-width: 800px;
   margin: 0;
   text-align: justify;

@@ -1,86 +1,34 @@
-/* ================= PROJECTS ================= */
 .projects-section {
-  padding: clamp(3rem, 6vw, 7rem) 1.5rem;
-  background-color: #001F3F; /* azul profundo elegante */
-  text-align: center;
+  padding: 5rem 0;
+  background: var(--card-bg);
 }
 
 .projects-section h2 {
-  font-size: 2.2rem;
-  color: #60a5fa; /* azul destaque */
+  text-align: center;
+  font-size: 2rem;
   margin-bottom: 3rem;
-  font-weight: 600;
+  color: #60a5fa;
 }
 
-/* Container dos Cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* O Card Individual */
-.project-item {
-  background: linear-gradient(145deg, var(--bg-card), rgba(30, 41, 59, 0.5));
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: left;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
+.project-card {
+  background: var(--bg-color);
+  border-radius: 16px;
   overflow: hidden;
-
-  display: flex;              /* ESSENCIAL */
-  flex-direction: column;     /* ESSENCIAL */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Efeito de brilho ao passar o mouse */
-.project-item:hover {
-  transform: translateY(-10px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
-              0 0 15px rgba(56, 189, 248, 0.1);
-}
-
-.project-item h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
-}
-
-.project-item img {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.project-description {
-  flex-grow: 1;               /* ocupa o meio do card */
-}
-
-.project-item a {
-  margin-top: auto;           /* ESSENCIAL: alinha todos os botões */
-  align-self: flex-start;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: #fff;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .project-item a:hover {
@@ -88,33 +36,85 @@
   transform: translateY(-2px);
 }
 
-/* ================= RESPONSIVO ================= */
-@media (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
+.project-item:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+              0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+.project-info {
+  padding: 1.2rem;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.project-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.2s ease;
+}
+
+.project-link:hover {
+  gap: 0.5rem;
+  text-decoration: underline;
+}
+
+body.dark-mode .project-card {
+  background: #1e293b;
 }
 
 @media (max-width: 768px) {
-  .projects-section {
-    padding: clamp(3rem, 6vw, 7rem) 1.5rem;
-  }
-
   .projects-grid {
-    grid-template-columns: 1fr; /* cards em coluna única */
-    gap: 1.2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-
-  .project-item {
-    padding: clamp(3rem, 6vw, 7rem) 1.5rem;
-  }
-
-  .project-item h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-description {
-    font-size: 0.85rem;
+  
+  .project-image {
+    height: 160px;
   }
 }
