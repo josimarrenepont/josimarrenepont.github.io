@@ -1,21 +1,13 @@
 .contact-section {
   padding: 5rem 0;
-   background: var(--card-bg);
+  background: var(--bg-color);
 }
 
 .contact-section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #60a5fa;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  color: var(--text-color);
 }
 
 .contact-container {
@@ -32,58 +24,44 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem 1.5rem;
+  background: var(--card-bg);
+  border-radius: 12px;
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--border-color);
   min-width: 220px;
-  background: var(--bg-color);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.contact-card:hover .project-image {
-  transform: scale(1.03);
-}
-
-.contact-item a:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  transform: translateY(-2px);
-}
-
-.contact-item:hover {
-  transform: translateY(-10px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
-              0 0 15px rgba(56, 189, 248, 0.1);
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.08);
 }
 
 .contact-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 40px;
 }
 
 .contact-icon img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .contact-info h3 {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .contact-info p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-color);
   font-weight: 500;
 }

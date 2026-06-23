@@ -1,18 +1,18 @@
-/* Header.css - VERSÃO CORRIGIDA (sem duplicidade) */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 0;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 body.dark-mode .header {
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(15, 23, 42, 0.85);
 }
 
 .header .container {
@@ -24,13 +24,13 @@ body.dark-mode .header {
   padding: 0 2rem;
 }
 
-/* LOGO - UMA VEZ SÓ */
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  letter-spacing: -0.5px;
 }
 
 .logo-bracket {
@@ -39,10 +39,15 @@ body.dark-mode .header {
 }
 
 .logo:hover {
-  color: var(--accent-hover);
+  color: var(--accent-color);
 }
 
-/* NAVEGAÇÃO */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -55,37 +60,60 @@ body.dark-mode .header {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
   position: relative;
+  padding: 0.25rem 0;
 }
 
-/* Efeito de linha embaixo ao passar o mouse */
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 2px;
   background: var(--accent-color);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links a:hover {
   color: var(--accent-color);
 }
 
-/* RESPONSIVO */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.social-links img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
   .header .container {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 0.5rem 1rem;
+  }
+  
+  .header-right {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
   }
   
   .nav-links {
@@ -95,6 +123,10 @@ body.dark-mode .header {
   }
   
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1rem;
   }
 }
