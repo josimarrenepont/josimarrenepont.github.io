@@ -5,6 +5,7 @@ import projeto4Gif from '../../assets/gifs/games3.avif';
 import projeto3Gif from '../../assets/gifs/garantia.jpg';
 import projeto6Gif from '../../assets/gifs/kafka.png';
 import projeto5Gif from '../../assets/gifs/pedido.jpg';
+import projeto8Gif from '../../assets/gifs/subscription.png';
 import './Projects.css';
 
 const projects = [
@@ -55,6 +56,13 @@ const projects = [
     description: 'Sistema para gerenciar pedidos, controlar estoque e relatórios.',
     image: projeto5Gif,
     link: 'https://github.com/josimarrenepont/workshop-springboot3-jpa',
+    tags: ['Java', 'Spring Boot', 'JPA'],
+  },
+   {
+    title: 'Subscription Management',
+    description: 'Sistema de Gestão de Assinaturas.',
+    image: projeto8Gif,
+    link: 'https://github.com/josimarrenepont/subscription-management',
     tags: ['Java', 'Spring Boot', 'JPA'],
   },
 ];
